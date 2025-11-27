@@ -25,7 +25,57 @@ nav a {
 nav a:hover {
     background-color: #555;
 }
+/* Navigation Search Bar Styling */
+.search-container {
+    display: inline-block; /* Keep it in line with nav links */
+    margin-left: 20px;
+}
 
+.search-container input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 200px;
+    margin-right: 5px;
+}
+
+.search-container button {
+    padding: 8px 12px;
+    background-color: #28a745; /* Green for search */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.search-container button:hover {
+    background-color: #218838;
+}
+
+#clearButton {
+    background-color: #dc3545; /* Red for clear */
+    margin-left: 5px;
+}
+
+#clearButton:hover {
+    background-color: #c82333;
+}
+
+/* Hide recommendations by default when filtered */
+.recommendation-item.hidden {
+    display: none;
+}
+
+/* Style for no results message */
+#noResultsMessage {
+    color: #dc3545;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    display: none; /* Hidden by default */
+}
 main {
     padding: 20px;
     max-width: 960px;
